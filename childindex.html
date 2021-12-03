@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NiXuan Arts</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+	</head>
+	<body>
+		<div id="anouncement_container">
+			<div id="anouncement_content">
+				<p><strong>欢迎来到NiXuan, 寒假特别班开始啦!</strong></p>
+				<p><strong>每周一个新课题，一周3节课，每节课/100</strong></p> 
+				
+				
+			</div>
+			 
+		
+		</div>
+
+
+		<div id="container">
+			<div id="header">
+				<h1>NiXuan Arts</h1>
+			</div>
+			<div id="content">
+				<div id="nav">
+					<h3>Navigation</h3>
+					<ul>
+						<li><a class="selected" href="index.html">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="https://www.google.ca">Contact</a></li>
+					<!--	<li><a href="javascript:alert('Hello freinds!');">Where hear us?</a></li>
+						<li><a href=""><button onclick="myFunction()" >Click here</button></a></li>
+						-->
+				</div>
+				<div id="main">
+					<h2>Home Page</h2>
+					<img src="baby_point_holiday.jpg" alt="" style="width:800px;height:500px;">
+				</div>
+			</div>
+			
+			<div id="myprompt">
+				<button onclick="myFunction()" >Where hear us?</button>
+				<p id="ansprompt"></p>
+			</div>
+			<div id="footer">
+				Copyright &copy; 2021 NiXuan Arts.
+		</div>
+				
+		<script>
+			function myFunction(){
+				var text;
+				var hearOpt=prompt("Where do you hear of us?","wechat");
+				switch(hearOpt){
+					case "wechat":
+						text = "Great, please add my wechat tonyzhang2119.";
+						break;
+					case "friend":
+						text = "what is friend's name?";
+						break;
+					case "meituan":
+						text = "Really, do you have our promotion coupon?";
+						break;
+					Default:
+						text = "I have never heard of that one.";
+						
+				
+				}
+				document.getElementById("ansprompt").innerHTML = text;
+			}
+		</script>
+	</body>
+	
+
+
+
+</html>
